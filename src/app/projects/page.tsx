@@ -5,16 +5,19 @@ import { Project } from '../../types/project'
 const projects: Project[] = [
   {
     id: 1,
-    name: '3D Portfolio Site',
-    description: 'A stunning 3D portfolio experience using Three.js, React Three Fiber, and Tailwind CSS.',
+    name: 'luxury hotel website',
+    description: 'Developed a luxury hotel website featuring a dynamic restaurant menu with 3D food visualizations, an interactive ordering system, and sections for a lobby bar, event management, banquet halls, and accommodations. The platform offers a seamless, responsive user experience with intuitive navigation, enhancing customer engagement and streamlining service bookings while showcasing the hotel’s diverse offerings.  The project was built using React.js, Tailwind CSS, node.js,  and MongoDB.',
     images: [
       '/projects/project-1/image1.jpg',
       '/projects/project-1/image2.jpg',
-      '/projects/project-1/image3.jpg'
+      '/projects/project-1/image3.jpg',
+      '/projects/project-1/image6.jpg',
+      '/projects/project-1/image7.jpg'
+
     ],
     video: '/projects/project-1/demo.mp4',
-    github: 'https://github.com/yourusername/3d-portfolio',
-    vercel: 'https://3d-portfolio.vercel.app',
+    github: 'https://github.com/ES-3508/luxury-hotel',
+    vercel: 'https://luxury-hotel-weld.vercel.app/',
   },
   
 ]

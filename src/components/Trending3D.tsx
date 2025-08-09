@@ -14,7 +14,7 @@ function ComputerModel() {
 const Trending3D = () => {
   return (
     <div className="bg-gradient-to-br from-gray-900 to-black text-white p-10 rounded-xl shadow-lg mb-10">
-      <h2 className="text-2xl font-semibold mb-4">🔥 Trending 3D Model</h2>
+      <h2 className="text-2xl font-semibold mb-4">🔥 MY ALL PROJECTS</h2>
       <div className="w-full h-96 bg-gray-800 rounded-lg">
         <Canvas camera={{ position: [0, 1, 3], fov: 50 }}>
           <ambientLight intensity={0.6} />
