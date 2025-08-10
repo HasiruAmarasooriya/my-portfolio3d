@@ -19,7 +19,15 @@ interface Certificate {
 // Sample certificate data
 const certificates: Certificate[] = [
 
-{
+   {
+    id: 11,
+    title: "HackerRank - SQL (Basic) Certificate",
+    issuer: "HackerRank",
+    imageUrl: "/certificates/SQL.png",
+    verificationLink: "https://www.hackerrank.com/certificates/2fc464428ccd",
+  },
+
+ {
     id: 1,
     title: "HackerRank - React (Basic) Certificate",
     issuer: "HackerRank",
