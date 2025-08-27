@@ -18,19 +18,32 @@ const projects: Project[] = [
     video: '/projects/project-1/demo.mp4',
     github: 'https://github.com/ES-3508/luxury-hotel',
     vercel: 'https://luxury-hotel-weld.vercel.app/',
+    skills: [
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name: "TailwindCSS", icon: "/icons/tailwind.svg" },
+      { name: "Node.js", icon: "/icons/node.svg" },
+      { name: "MongoDB", icon: "/icons/mongodb.svg" },
+      { name: "Next.js", icon: "/icons/nextjs.svg" },
+      
+    ],
   },
+
+
   
 ]
 
 export default function ProjectsPage() {
   return (
     <main className="container py-12">
-      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Projects</h1>
       <Trending3D />
-      <div className="flex flex-col gap-6">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
+      <div className="flex justify-center">
+        <div className="flex flex-col gap-8 w-full max-w-4xl">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </main>
   )
