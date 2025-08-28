@@ -39,22 +39,32 @@ const EducationWorkSplit: React.FC = () => {
   ];
 
   const work = [
+    
     {
-      title: 'Fintechnology Asia Pacific (Pvt) Ltd',
-      subtitle: 'Software Engineer Intern',
-      date: '2023.03.10 - 2023.09.10 (6 months)',
+      title: 'Kumudu Hospital (Pvt) Ltd',
+      subtitle: 'Software Engineer',
+      date: '2025.02 - 2026.02 (1 year)',
       icon: '/icons/work.svg',
     },
+
+    {
+      title: 'ColtexBiz (Pvt) Ltd',
+      subtitle: 'Software Engineer',
+      date: '2024.08 - 2025.01 (6 months)',
+      icon: '/icons/work.svg',
+    },
+
     {
       title: 'Donext',
       subtitle: 'Software Engineer',
       date: '2024.01.02 - 2024.12.02 (1 year)',
       icon: '/icons/work.svg',
     },
+
     {
-      title: 'ColtexBiz (Pvt) Ltd',
-      subtitle: 'Software Engineer',
-      date: '2024.08 - 2025.01 (6 months)',
+      title: 'Fintechnology Asia Pacific (Pvt) Ltd',
+      subtitle: 'Software Engineer Intern',
+      date: '2023.03.10 - 2023.09.10 (6 months)',
       icon: '/icons/work.svg',
     },
   ];

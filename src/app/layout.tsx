@@ -42,6 +42,7 @@ const navItems = [
   { label: "EDUCATION", path: "/education", icon: BookOpen },
   { label: "PROJECTS", path: "/projects", icon: Code },
   { label: "CERTIFICATES", path: "/certificates", icon: Award },
+  { label: "CONTACT", path: "/contact", icon: Mail },
   
 ];
 
