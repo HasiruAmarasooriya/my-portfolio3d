@@ -18,7 +18,6 @@ const skillsData = [
       { name: 'Bootstrap (Frontend)', icon: '/icons/bootstrap.svg' },
       { name: 'Tailwind CSS (Frontend)', icon: '/icons/tailwind.svg' },
       { name: 'Three.js (3D Web)', icon: '/icons/threejs.svg' },
-      
     ],
   },
   {
@@ -33,8 +32,6 @@ const skillsData = [
       { name: 'ReactJS', icon: '/icons/react.svg' },
       { name: 'NextJS', icon: '/icons/nextjs.svg' },
       { name: 'Three.js', icon: '/icons/threejs.svg' },
-      
-
     ],
   },
   {
@@ -57,50 +54,42 @@ const skillsData = [
       { name: 'MongoDB', icon: '/icons/mongodb.svg' },
       { name: 'MySQL', icon: '/icons/mysql.svg' },
       { name: 'SSMS', icon: '/icons/ssms.svg' },
-      
     ],
   },
   {
     category: 'Mobile Application',
-    items: [
-      { name: 'Flutter', icon: '/icons/flutter.svg' },
-    ],
+    items: [{ name: 'Flutter', icon: '/icons/flutter.svg' }],
   },
   {
-    category: 'Version Control',
+    category: 'Version Control & DevOps',
     items: [
       { name: 'Git', icon: '/icons/git.svg' },
       { name: 'GitHub', icon: '/icons/github.svg' },
     ],
   },
   {
-    category: 'IDEs',
+    category: 'IDEs & Editors',
     items: [
       { name: 'Visual Studio Code (VS Code)', icon: '/icons/vscode.svg' },
       { name: 'IntelliJ', icon: '/icons/intellij.svg' },
       { name: 'Android Studio', icon: '/icons/android-studio.svg' },
       { name: 'Eclipse', icon: '/icons/eclipse.svg' },
       { name: 'Visual Studio', icon: '/icons/visual-studio.svg' },
-     
     ],
   },
-
   {
     category: 'Cloud Platforms',
     items: [
-        { name: 'Vercel (Frontend)', icon: '/icons/vercel.svg' },
-        { name: 'Netlify (Frontend)', icon: '/icons/netlify.svg' },
-        { name: 'cloudflare pages (Frontend)', icon: '/icons/cloudflare.svg' },
-        { name: 'Amazon Web Services (AWS) (Backend)', icon: '/icons/aws.svg' },
-        { name: 'Microsoft Azure (Backend)', icon: '/icons/azure.svg' },
-        { name: 'Google Cloud Platform (GCP) (Backend)', icon: '/icons/gcp.svg' },
-        
-        
-     
+      { name: 'Vercel (Frontend)', icon: '/icons/vercel.svg' },
+      { name: 'Netlify (Frontend)', icon: '/icons/netlify.svg' },
+      { name: 'Cloudflare Pages (Frontend)', icon: '/icons/cloudflare.svg' },
+      { name: 'Amazon Web Services (AWS) (Backend)', icon: '/icons/aws.svg' },
+      { name: 'Microsoft Azure (Backend)', icon: '/icons/azure.svg' },
+      { name: 'Google Cloud Platform (GCP) (Backend)', icon: '/icons/gcp.svg' },
     ],
   },
   {
-    category: 'Software',
+    category: 'Software & Tools',
     items: [
       { name: 'Figma', icon: '/icons/figma.svg' },
       { name: 'Canva', icon: '/icons/canva.svg' },
@@ -111,7 +100,6 @@ const skillsData = [
       { name: 'Gemini', icon: '/icons/gemini.svg' },
       { name: 'ChatGPT', icon: '/icons/chatgpt.svg' },
       { name: 'Docker', icon: '/icons/docker.svg' },
-
     ],
   },
   {
@@ -129,14 +117,17 @@ const skillsData = [
 
 const SkillPage: React.FC = () => {
   return (
-    <section className="min-h-screen bg-background text-foreground px-6 lg:px-20 py-20 relative">
+    <section className="min-h-screen bg-white dark:bg-background text-gray-900 dark:text-foreground px-6 lg:px-20 py-20 relative transition-colors duration-500">
       <h1 className="text-5xl font-extrabold text-primary text-center mb-12">
         👨‍💻 Technical Skills
       </h1>
 
       {/* 3D Spline Model */}
       <div className="w-full h-[500px] mb-12 flex justify-center">
-        <Spline scene="https://prod.spline.design/gcV0eOmjcwXlxhol/scene.splinecode" className="w-full h-full rounded-xl shadow-xl" />
+        <Spline
+          scene="https://prod.spline.design/gcV0eOmjcwXlxhol/scene.splinecode"
+          className="w-full h-full rounded-xl shadow-xl"
+        />
       </div>
 
       {/* Skills Grid */}
@@ -145,15 +136,17 @@ const SkillPage: React.FC = () => {
           <motion.div
             key={idx}
             whileHover={{ scale: 1.05, rotateY: 5, rotateX: 3 }}
-            className="bg-gradient-to-br from-gray-900 to-gray-700 dark:from-gray-800 dark:to-gray-600 p-6 rounded-2xl shadow-2xl backdrop-blur-md border border-white/20 flex flex-col items-center text-center transition-all duration-300 cursor-pointer hover:shadow-primary/50"
+            className="bg-gray-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-700 p-6 rounded-2xl shadow-2xl backdrop-blur-md border border-gray-300 dark:border-white/20 flex flex-col items-center text-center transition-all duration-300 cursor-pointer hover:shadow-primary/50"
           >
-            <h3 className="text-xl font-semibold mb-4 text-primary">{skillCategory.category}</h3>
+            <h3 className="text-xl font-semibold mb-4 text-primary">
+              {skillCategory.category}
+            </h3>
             <div className="grid grid-cols-3 gap-4">
               {skillCategory.items.map((item, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.15, rotateY: 10 }}
-                  className="flex flex-col items-center gap-2 bg-white/10 p-3 rounded-xl shadow-md backdrop-blur-md border border-white/20 cursor-pointer transition-all duration-300 hover:shadow-blue-500/50"
+                  className="flex flex-col items-center gap-2 bg-gray-200 dark:bg-white/10 p-3 rounded-xl shadow-md backdrop-blur-md border border-gray-300 dark:border-white/20 cursor-pointer transition-all duration-300 hover:shadow-blue-500/50"
                 >
                   <Image
                     src={item.icon}
@@ -162,7 +155,9 @@ const SkillPage: React.FC = () => {
                     height={40}
                     className="object-contain"
                   />
-                  <span className="text-white text-sm font-medium">{item.name}</span>
+                  <span className="text-gray-900 dark:text-white text-sm font-medium">
+                    {item.name}
+                  </span>
                 </motion.div>
               ))}
             </div>
