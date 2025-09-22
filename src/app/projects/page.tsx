@@ -28,6 +28,32 @@ const projects: Project[] = [
       
     ],
   },
+   {
+    id: 2,
+    name: 'Hospital website',
+    description: 'Developed a responsive hospital website using Next.js and Tailwind CSS, focusing on performance, accessibility, and user-friendly design. The project was built using – Next.js, ReactJS, Tailwind CSS, Node JS, MongoDB, and TypeScript.',
+    images: [
+      '/projects/project-2/image1.jpg',
+      '/projects/project-2/image2.jpg',
+      '/projects/project-2/image3.jpg',
+      '/projects/project-2/image4.jpg',
+      '/projects/project-2/image5.jpg',
+      '/projects/project-2/image6.jpg'
+
+    ],
+    video: '/projects/project-1/demo.mp4',
+    github: 'https://github.com/HasiruAmarasooriya/Hospital-Next.js',
+    vercel: 'https://hospital-next-js.vercel.app/',
+    skills: [
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "TypeScript", icon: "/icons/typescript.svg" },
+      { name: "TailwindCSS", icon: "/icons/tailwind.svg" },
+      { name: "Node.js", icon: "/icons/node.svg" },
+      { name: "MongoDB", icon: "/icons/mongodb.svg" },
+      { name: "Next.js", icon: "/icons/nextjs.svg" },
+      
+    ],
+  },
 
 
   

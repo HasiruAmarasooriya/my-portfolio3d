@@ -32,8 +32,9 @@ export default function ContactPage() {
             Let’s Build Something Great 🚀
           </h1>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-            Have a project idea, a collaboration, or just want to say hi?  
-            I’d love to hear from you! Fill out the form or connect through my socials.
+            Have a project idea, a collaboration, or just want to say hi? I’d
+            love to hear from you! Fill out the form or connect through my
+            socials.
           </p>
         </motion.div>
 
@@ -71,7 +72,10 @@ export default function ContactPage() {
                   🌐 Portfolio
                 </Button>
               </a>
-              <a href="https://linkedin.com/in/hasiru-amarasooriya-aaa565221" target="_blank">
+              <a
+                href="https://linkedin.com/in/hasiru-amarasooriya-aaa565221"
+                target="_blank"
+              >
                 <Button className="bg-gradient-to-r from-pink-500 to-orange-500 text-white">
                   💼 LinkedIn
                 </Button>
@@ -132,12 +136,46 @@ export default function ContactPage() {
 
         {/* 🔹 Footer / Socials */}
         <div className="text-center space-y-4">
-          <p className="text-gray-300">🌟 Let’s connect and create something amazing together!</p>
+          <p className="text-gray-300">
+            🌟 Let’s connect and create something amazing together!
+          </p>
           <div className="flex justify-center gap-6 text-2xl">
-            <a href="https://facebook.com" className="hover:text-blue-500">🌐</a>
-            <a href="https://twitter.com" className="hover:text-sky-400">🐦</a>
-            <a href="https://instagram.com" className="hover:text-pink-500">📸</a>
-            <a href="https://linkedin.com" className="hover:text-blue-700">💼</a>
+            <a href="https://facebook.com/hasiru.amarasena" className="hover:text-blue-500">
+              <img
+                src="/facebook.png"
+                alt="facebook"
+                className="w-6 h-6 object-cover"
+              ></img>
+            </a>
+            <a href="https://twitter.com" className="hover:text-sky-400">
+              <img
+                src="/twitter.png"
+                alt="twitter" 
+                className="w-6 h-6 object-cover"
+              ></img>
+            </a>
+            <a href="https://instagram.com/hasiru_amarasooriya" className="hover:text-pink-500">
+              <img
+                src="/instagram.png"
+                alt="instagram"
+                className="w-6 h-6 object-cover"
+              ></img>
+            </a>
+            <a href="https://linkedin.com/in/hasiru-amarasooriya-aaa565221" className="hover:text-blue-700">
+              <img
+                src="/linkedin.png"
+                alt="linkedin"
+                className="w-6 h-6 object-cover"
+              ></img>
+            </a>
+
+            <a href="https://github.com/HasiruAmarasooriya" className="hover:text-blue-700">
+              <img
+                src="/github.png"
+                alt="linkedin"
+                className="w-6 h-6 object-cover"
+              ></img>
+            </a>
           </div>
         </div>
       </div>
